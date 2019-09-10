@@ -27,7 +27,7 @@ sudo tar -xzf node-v4.8.6-linux-x64.tar.xz -C /usr/local --strip-components=1
 ln -s /usr/local/bin/node /usr/local/bin/nodejs
 
 
-# validation  
+# validation and testing  
 node --version  
 nodejs --version  
 npm --version  
