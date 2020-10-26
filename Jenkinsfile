@@ -13,13 +13,13 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-		sh 'npm install && npm run test'
+		sh 'npm run test'
             }
         }
         stage('Package') {
             steps {
                 echo 'Deploying....'
-		sh 'npm install && npm run package'
+		sh 'npm run package'
 		archiveArtifacts artifacts: '**/distribution/*.zip', fingerprint: true	
             }
         }
